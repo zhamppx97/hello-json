@@ -69,6 +69,8 @@
   <ItemGroup>
     <Content Include="Example\ex1.html" />
     <Content Include="Example\ex2.html" />
+    <Content Include="Example\ex3.html" />
+    <Content Include="Example\json_demo.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

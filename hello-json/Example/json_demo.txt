@@ -1,0 +1,9 @@
+﻿{
+    "name":"zhamppx97",
+    "age":26,
+    "marvel":[
+        { "avengers":"captain america", "name":"Steve Rogers" },
+        { "avengers":"ironman", "name":"Tony Stark" },
+        { "avengers":"spider man", "name":"Peter Parker" }
+    ]
+}
