@@ -73,6 +73,7 @@
     <Content Include="Example\ex4.html" />
     <Content Include="Example\ex5.html" />
     <Content Include="Example\ex6.html" />
+    <Content Include="Example\ex7.html" />
     <Content Include="Example\json_demo.txt" />
     <Content Include="Example\json_demo_array.txt" />
     <Content Include="Web.config" />
