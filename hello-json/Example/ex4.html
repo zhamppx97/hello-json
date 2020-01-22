@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Example 4</title>
+</head>
+<body>
+    <h2>Content as Array.</h2>
+    <p>Content written as an JSON array will be converted into a JavaScript array.</p>
+
+    <p id="demoText"></p>
+
+    <script type="text/javascript">
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var myArr = JSON.parse(this.responseText);
+                document.getElementById("demoText").innerHTML = myArr[0];
+            }
+        };
+        xmlhttp.open("GET", "json_demo_array.txt", true);
+        xmlhttp.send();
+    </script>
+
+    <p>Take a look at <a href="json_demo_array.txt" target="_blank">json_demo_array.txt</a></p>
+</body>
+</html>
