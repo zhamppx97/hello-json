@@ -70,6 +70,7 @@
     <Content Include="Example\ex1.html" />
     <Content Include="Example\ex10.html" />
     <Content Include="Example\ex11.html" />
+    <Content Include="Example\ex12.html" />
     <Content Include="Example\ex2.html" />
     <Content Include="Example\ex3.html" />
     <Content Include="Example\ex4.html" />
