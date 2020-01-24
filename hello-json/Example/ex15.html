@@ -2,18 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>JSON Example 14</title>
+    <title>JSON Example 15</title>
 </head>
 <body>
-    <p>Access a JSON object using bracket notation:</p>
+    <p>How to loop through all properties in a JSON object.</p>
 
     <p id="demoText"></p>
 
     <script type="text/javascript">
         var myObj, x;
         myObj = { "name": "zhamppx97", "age": 26, "car": null };
-        x = myObj["name"];
-        document.getElementById("demoText").innerHTML = x;
+        for (x in myObj) {
+            document.getElementById("demoText").innerHTML += x + "<br>";
+        }
     </script>
 </body>
 </html>
