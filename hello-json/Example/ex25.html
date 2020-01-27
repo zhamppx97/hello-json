@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Example 25</title>
+</head>
+<body>
+    <p>How to modify an array value of a JSON object.</p>
+
+    <p id="demoText"></p>
+
+    <script type="text/javascript">
+        var myObj, i, x = "";
+        myObj = {
+            "name": "zhamppx97",
+            "age": 26,
+            "cars": ["Ford", "BMW", "Fiat"]
+        };
+        myObj.cars[1] = "Mercedes";
+
+        for (i in myObj.cars) {
+            x += myObj.cars[i] + "<br>";
+        }
+        document.getElementById("demoText").innerHTML = x;
+    </script>
+</body>
+</html>
