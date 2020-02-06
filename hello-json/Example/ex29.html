@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Example 29</title>
+</head>
+<body>
+    <h2>Make a drop down list based on JSON data.</h2>
+
+    <p id="demoText"></p>
+
+    <script type="text/javascript">
+        var obj, dbParam, xmlhttp, myObj, x, txt = "";
+        obj = { table: "customers", limit: 20 };
+        dbParam = JSON.stringify(obj);
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                myObj = JSON.parse(this.responseText);
+                txt += "<select>"
+                for (x in myObj) {
+                    txt += "<option>" + myObj[x].name;
+                }
+                txt += "</select>"
+                document.getElementById("demoText").innerHTML = txt;
+            }
+        };
+        xmlhttp.open("POST", "json_demo_db_post.php", true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send("x=" + dbParam);
+    </script>
+</body>
+</html>
